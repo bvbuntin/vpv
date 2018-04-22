@@ -1,0 +1,121 @@
+/** GENERAL **/
+body {
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size:14pt;
+    width:100%;
+    background-color:{color:BodyBackground};
+}
+a {
+    text-decoration:none;
+    -webkit-transition:color .3s,background-color .3s;
+    transition:color .3s,background-color .3s;
+    -moz:color .3s,background-color .3s;
+    -o:color .3s,background-color .3s;
+    color:{color:LinkColor};
+}
+a:hover {
+    color:{color:LinkHoverColor};
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform:uppercase;
+    margin:0 auto;
+}
+h1 {
+    font-size:50pt;
+    font-weight:500;
+}
+h2 {
+    font-size:20pt;
+    font-weight:500;
+}
+h3 {
+    font-size:14pt;
+    font-weight:500;
+}
+
+h1,h2,h3,h4 {
+    font-family:'Sumana', sand-serif;
+}
+
+.top {
+    height:400px;
+    background-color:{color:TopBackground};
+    background-image:url('{image:TopBackground}');
+    background-size:cover;
+    background-position:center center;
+}
+
+.top-text {
+    padding:10%;
+    margin:0 10%;
+    text-shadow:2px 2px 20px #000;
+}
+
+
+.navbar {
+    background-color:{color:NavBackground};
+    position:fixed;
+    width:100%;
+    z-index:1;
+    text-align:center;
+    font-weight:400;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    font-size:14pt;
+}
+.navbar a {
+    padding:15px 20px 10px 20px;
+    margin:10px 0;
+    display:inline-block;
+    color:{color:NavColor};
+}
+.navbar a:hover {
+    background-color:{color:NavHoverBackground};
+    color:{color:NavHoverColor};
+}
+
+
+.title,.description {
+    color:{color:TopColor};
+}
+
+.column-1 {
+    width:20%;
+    background-color:{color:SidebarBackground};
+    position:absolute;
+    z-index:-9999;
+    padding:5%;
+    margin-left:5%;
+}
+
+.column-2 {
+    width:55%;
+    margin-left:40%;
+    background-color:{color:ContentBackground};
+}
+
+.posts {
+    background-color:{color:PostBackground};
+    margin-bottom:50px;
+}
+
+.dates, .post-info, .post-content {
+    padding:15px 50px;
+}
+
+.dates {
+    text-align:right;
+}
+
+/*@media screen and (max-width: 800px) {
+    .column-1 {
+        width:30%;
+    }
+    
+    .column-2 {
+        width:60%;
+    }
+    
+}
+ */
